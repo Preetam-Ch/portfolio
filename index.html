@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css files here -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--==== style switcher ====-->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .tag {
+            position: absolute;
+            cursor: pointer;
+        }
+    </style>
+    <script src="path/to/script.js"></script>
+</head>
+
+<body class>
+    <!-- === Main container start===-->
+    <div class="main-container">
+        <!--===Aside Start-->
+        <div class="aside ">
+            <div class="logo"
+                style="display: inline-block; width: 80px; height: 80px; margin: 10px; border-radius: 50%; overflow: hidden;">
+                <img src="images/dp/logo1.png" alt="Logo" id="logo-img" style="width: 100%; height: 100%;"
+                    onclick="showPopup('logo-popup')">
+                <div id="logo-popup" class="popup">
+                    <button class="close-btn" onclick="hidePopup('logo-popup')">&times;</button>
+                    <img src="images/dp/logo1.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Skills</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Projects</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!--===Aside End===-->
+        <!--===Main content Start===-->
+        <div class="main-content ">
+            <!--=== Home section start===-->
+            <section class="home active section " id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Heloo, my name is <span class="name">Preetam Chinthakindhi</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing">web designer</span></h3>
+                            <p>I am a multi-faceted individual with a diverse range of interests, including data
+                                analysis, web development, and content creation..</p>
+                            <a href="#" class="btn ">Download CV</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="images/dp/me1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--=== Home section End===-->
+            <!--=== About section start===-->
+            <section class="about section " id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>I am Preetam Chinthakindhi and <span> I'm a</span> </h3>
+                                    <p>
+                                        Recent graduate in Ece with a strong programming background in Python and C. I'm eager to kick-start my career in
+                                        data analysis, web development, and software engineering. I've taken online courses to expand my knowledge and worked on
+                                        personal projects like portfolio creation and data visualization. While I lack industry experience, I'm a quick learner
+                                        and passionate about making a meaningful impact. I'm confident in my technical abilities and work ethic and excited to
+                                        contribute to any team.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Birthday:<span>24 Jan 2002</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age:<span>21</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Website:<span>www.domain.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email:<span>Email@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Degree:<span>B.Tech</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone:<span>+919874561230</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City:<span>Jagtial</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Freelance:<span>Available</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="tagBall padd-15">
+                                        <a class="tag" target="_blank"> Python </a>
+                                        <a class="tag" target="_blank"> JAVA </a>
+                                        <a class="tag" target="_blank"> JavaScript</a>
+                                        <a class="tag" target="_blank"> HTML</a>
+                                        <a class="tag" target="_blank"> CSS</a>
+                                        <a class="tag" target="_blank"> C</a>
+                                        <a class="tag" target="_blank"> MySQL</a>
+                                        <a class="tag" target="_blank">WordPress</a>
+                                        <a class="tag" target="_blank">TenserFlow</a>
+                                        <a class="tag" target="_blank">OpenCV</a>
+                                    </div>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $(".tagBall").cloudTag({ ballSize: 150 });
+                                        });
+                                    </script>
+                                </div>
+
+                            </div>
+                            <!-- education section  -->
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!--- ==== timeline item==== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013-2015
+                                                    </h3>
+                                                    <h4 class="timeline-title">B.tech in Ece</h4>
+                                                    <p class="timeline-text">B.Tech graduate in Ece with honors, Possesses a strong foundation in programming languages such
+                                                        as Python and C, and a keen interest in expanding my knowledge and learning more about data.
+                                                    </p>
+                                                </div>
+                                                <!--- ==== timeline item==== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013-2015
+                                                    </h3>
+                                                    <h4 class="timeline-title">Intermediate in Tsbie</h4>
+                                                    <p class="timeline-text">Intermediate graduate with honors in science and mathematics from Tsbie.
+                                                    </p>
+                                                </div>
+                                                <!--- ==== timeline item==== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013-2015
+                                                    </h3>
+                                                    <h4 class="timeline-title">High School in TS SSC</h4>
+                                                    <p class="timeline-text">Recognized with honors for academic excellence in
+                                                        10th grade.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3><!-- idi teseste experience potadi-->
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!--- ==== timeline item==== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2022-2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Projects</h4>
+                                                    <p class="timeline-text">I have completed several personal projects focused on data analysis and web scraping, where I
+                                                        applied my strong programming skills in Python and C to extract, clean, and analyze data, and created visualizations
+                                                        to communicate insights effectively.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--=== About section End===-->
+            <!--=== Services Section Start===-->
+            <section class="service section " id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--==== Service item start ====-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Web design</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore fugiat adipisci
+                                    cupiditate.</p>
+                            </div>
+                        </div>
+                        <!--==== Service item End ====-->
+                        <!--==== Service item start ====-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web design</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore fugiat adipisci
+                                    cupiditate.</p>
+                            </div>
+                        </div>
+                        <!--==== Service item End ====-->
+                        <!--==== Service item start ====-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Web design</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore fugiat adipisci
+                                    cupiditate.</p>
+                            </div>
+                        </div>
+                        <!--==== Service item End ====-->
+                        <!--==== Service item start ====-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Web design</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore fugiat adipisci
+                                    cupiditate.</p>
+                            </div>
+                        </div>
+                        <!--==== Service item End ====-->
+                        <!--==== Service item start ====-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Web design</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore fugiat adipisci
+                                    cupiditate.</p>
+                            </div>
+                        </div>
+                        <!--==== Service item End ====-->
+                        <!--==== Service item start ====-->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4>Web design</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore fugiat adipisci
+                                    cupiditate.</p>
+                            </div>
+                        </div>
+                        <!--==== Service item End ====-->
+                    </div>
+                </div>
+            </section>
+            <!--=== Services Section End===-->
+            <!--=== Portfolio Section Start===-->
+            <section class="portfolio section  " id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Project :</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--== portfolio item Start == -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--== portfolio item End == -->
+                        <!--== portfolio item Start == -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--== portfolio item End == -->
+                        <!--== portfolio item Start == -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--== portfolio item End == -->
+                        <!--== portfolio item Start == -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--== portfolio item End == -->
+                        <!--== portfolio item Start == -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-5.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--== portfolio item End == -->
+                        <!--== portfolio item Start == -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/portfolio/portfolio-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--== portfolio item End == -->
+                    </div>
+                </div>
+            </section>
+            <!--=== Portfolio Section End===-->
+            <!--=== Contact Section Start===-->
+            <section class="contact section " id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICE</h4>
+                    <div class="row">
+                        <!-- ==== Contact info item start ==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Me on</h4>
+                            <p>+91 78346892808</p>
+                        </div>
+                        <!-- ==== Contact info item end ==== -->
+                        <!-- ==== Contact info item start ==== -->
+                        <!-- <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <h4>Office</h4>
+                            <p>Islamabad</p>
+                        </div> -->
+                        <!-- ==== Contact info item end ==== -->
+                        <!-- ==== Contact info item start ==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>preetamchinthakindi123@gmail.com</p>
+                        </div>
+                        <!-- ==== Contact info item end ==== -->
+                        <!-- ==== Contact info item start ==== -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                            <h4>website</h4>
+                            <p>www.domain.com</p>
+                        </div>
+                        <!-- ==== Contact info item end ==== -->
+                    </div>
+                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <!-- ==== Contact Form  ===== -->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--=== Contact Section End===-->
+        </div>
+        <!--===Main content End===-->
+    </div>
+    <!-- === Main container End===-->
+    <!-- ==== Style switcher start ==== -->
+    <div class="style-switcher ">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas  "></i>
+        </div>
+        <h4>Theme colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- ==== Style switcher End ==== -->
+    <!--=== js files here ===-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
+</body>
+
+</html>
