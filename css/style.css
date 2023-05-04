@@ -20,7 +20,7 @@ body.dark {
 body {
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins' ,sans-serif;
 }
 
 * {
@@ -187,7 +187,6 @@ ul {
     text-transform: capitalize;
 }
 
-
 .popup {
     display: none;
     position: fixed;
@@ -196,11 +195,11 @@ ul {
     transform: translate(-50%, -50%);
     z-index: 9999;
 }
-
+  
 .popup-content {
     position: relative;
 }
-
+  
 .popup-close {
     position: absolute;
     top: 5px;
@@ -217,7 +216,6 @@ ul {
     cursor: pointer;
     z-index: 1;
 }
-
 .close-btn {
     position: absolute;
     top: 0;
@@ -231,7 +229,6 @@ ul {
     font-weight: bold;
     cursor: pointer;
 }
-
 .aside .nav-toggler {
     height: 40px;
     width: 45px;
@@ -248,7 +245,6 @@ ul {
     /*that centre line in a square  */
     transition: all 0.3s ease;
 }
-
 .aside .nav-toggler span {
     height: 2px;
     width: 18px;
@@ -256,11 +252,9 @@ ul {
     display: inline-block;
     position: relative;
 }
-
 .aside .nav-toggler.open span {
     background-color: transparent;
 }
-
 .aside .nav-toggler span::before {
     content: '';
     height: 2px;
@@ -270,12 +264,10 @@ ul {
     top: -6px;
     left: 0;
 }
-
 .aside .nav-toggler.open span::before {
     transform: rotate(45deg);
     top: 0;
 }
-
 .aside .nav-toggler span::after {
     content: '';
     height: 2px;
@@ -285,21 +277,17 @@ ul {
     top: 6px;
     left: 0;
 }
-
 .aside .nav-toggler.open span::after {
     transform: rotate(-45deg);
     top: 0;
 }
-
 .aside .nav {
     margin-top: 50px;
 }
-
 .aside .nav li {
     margin-bottom: 20px;
     display: block;
 }
-
 .aside .nav li a {
     font-size: 16px;
     font-weight: 600;
@@ -308,22 +296,18 @@ ul {
     color: var(--text-black-900);
     padding: 5px 15px;
 }
-
 .aside .nav li a.active {
     color: var(--skin-color);
 }
-
 .aside .nav li a i {
     margin-right: 15px;
 }
-
 /* home */
 .home {
     min-height: 100vh;
     display: flex;
     color: var(--text-black-900)
 }
-
 .home .home-info {
     flex: 0 0 60%;
     max-width: 60%;
@@ -333,7 +317,6 @@ h3.hello {
     font-size: 28px;
     margin: 15px 0;
 }
-
 h3.hello span {
     font-family: 'clicker Script', cursive;
     font-size: 30px;
@@ -454,7 +437,7 @@ h3.my-profession {
 .about .about-content .personal-info .buttons .btn {
     margin-top: 10px;
 }
-
+ 
 .about .about-content .tagBall {
     width: 40vw;
     height: 45vh;
@@ -464,7 +447,6 @@ h3.my-profession {
     position: absolute;
     cursor: cell;
 }
-
 .about .about-content .tag {
     display: block;
     position: absolute;
@@ -473,19 +455,17 @@ h3.my-profession {
     font-size: 15px;
     font-weight: bold;
     -webkit-transform: scale(1);
-    transform: scale(1);
+    transform: scale(1); 
 }
-
 .about .about-content .tag:hover {
     -webkit-transform: scale(1);
     transform: scale(1.2);
     cursor: none;
-}
-
-.about .about-content .container {
+  }
+  .about .about-content .container {
     transform: translate3d(50px, 50px, 0px);
-}
-
+  }
+  
 .about .about-content .education,
 .about .about-content .experience {
     flex: 0 0 50%;
@@ -825,7 +805,7 @@ h3.my-profession {
     .home .home-img {
         display: none;
     }
-
+    
 }
 
 @media(max-width:767px) {
@@ -837,13 +817,12 @@ h3.my-profession {
     .about .about-content .education,
     .about .about-content .experience,
     .about .about-content .skills,
-
+    
     .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
-    .about .tagBall {
+    .about .tagBall{
         display: none;
     }
 }
